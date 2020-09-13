@@ -28,7 +28,7 @@ AnimationClip:
     - time: 0.25
       value: {fileID: -9206091644520726168, guid: dcdda75e148449b4283619583230b32e, type: 3}
     attribute: m_Sprite
-    path: 
+    path: Mushroom
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 12
@@ -39,7 +39,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 516242109
       attribute: 0
       script: {fileID: 0}
       typeID: 212

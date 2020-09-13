@@ -40,8 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330762335445824804}
   - component: {fileID: 330762335445824805}
-  - component: {fileID: 330762335445824810}
-  - component: {fileID: 330762335445824811}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -115,39 +113,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &330762335445824810
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: e860239eb7102914d8556b248e37e68c, type: 3}
-  m_PrefabInstance: {fileID: 330762335061947431}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330762335445824808}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9caede77070ec0441954fedf150ad12c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &330762335445824811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1426814675213382558, guid: e860239eb7102914d8556b248e37e68c, type: 3}
-  m_PrefabInstance: {fileID: 330762335061947431}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330762335445824808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba491f2f25916cd4d88986890e92fe0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1065750534976220335, guid: fa21c490a958c064ba9ab06c513a4e0c, type: 3}
-  projectileOriginPoint: {fileID: 330762334334185928}
 --- !u!1 &2060215445605470511
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +122,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799101545899437297}
+  - component: {fileID: 9193847410633607382}
   - component: {fileID: 5500009217866483901}
+  - component: {fileID: 1409851842998033401}
   m_Layer: 0
   m_Name: Fantasy Archer
   m_TagString: Untagged
@@ -180,6 +147,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &9193847410633607382
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060215445605470511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9caede77070ec0441954fedf150ad12c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &5500009217866483901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +179,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaCost: 100
+--- !u!114 &1409851842998033401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060215445605470511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba491f2f25916cd4d88986890e92fe0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1065750534976220335, guid: fa21c490a958c064ba9ab06c513a4e0c, type: 3}
+  projectileOriginPoint: {fileID: 330762334334185928}
 --- !u!1001 &330762335061947431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,5 +264,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e860239eb7102914d8556b248e37e68c, type: 3}
