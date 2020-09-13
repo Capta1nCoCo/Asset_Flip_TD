@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DefenderButton : MonoBehaviour
-{    
+{
+    [SerializeField] Defender defenderPrefab;
+
     DefenderButton[] defenderButtons;
     Color notSelected;
 
     SpriteRenderer spriteRenderer;
+    DefenderSpawner defenderSpawner;
     
     private void Start()
     {
         defenderButtons = FindObjectsOfType<DefenderButton>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        notSelected = spriteRenderer.color;        
+        notSelected = spriteRenderer.color;
+        defenderSpawner = FindObjectOfType<DefenderSpawner>();
     }
 
 
@@ -24,6 +28,7 @@ public class DefenderButton : MonoBehaviour
             defenderButton.spriteRenderer.color = notSelected;
         }
         spriteRenderer.color = Color.white;
+        defenderSpawner.SetSelectedDefender(defenderPrefab);
     }
    
 }

@@ -219,7 +219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04d9eeae393e3d940b7f8b7e3d70c3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 2060215445605470511, guid: f2f01e97b8e718b4fa65c8b827e61d94, type: 3}
 --- !u!61 &374254535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -309,7 +308,7 @@ GameObject:
   - component: {fileID: 950330545}
   - component: {fileID: 950330544}
   m_Layer: 0
-  m_Name: TinyAngel Button
+  m_Name: ManaAngel Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da63461bb39cb94db6731eb551ea8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 1602267908567905594, guid: b2dfea6b0a6ced14ea8c03c57afca100, type: 3}
 --- !u!61 &950330545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -810,6 +810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da63461bb39cb94db6731eb551ea8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defenderPrefab: {fileID: 5500009217866483901, guid: f2f01e97b8e718b4fa65c8b827e61d94, type: 3}
 --- !u!61 &1731839947
 BoxCollider2D:
   m_ObjectHideFlags: 0

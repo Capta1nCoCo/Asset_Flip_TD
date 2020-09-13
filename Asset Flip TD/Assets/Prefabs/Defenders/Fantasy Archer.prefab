@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 330762335445824810}
   - component: {fileID: 330762335445824811}
   m_Layer: 0
-  m_Name: FantasyArcher_03
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,6 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799101545899437297}
+  - component: {fileID: 5500009217866483901}
   m_Layer: 0
   m_Name: Fantasy Archer
   m_TagString: Untagged
@@ -179,6 +180,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5500009217866483901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060215445605470511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817a0ee405059664fa995b394b8eee61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaCost: 100
 --- !u!1001 &330762335061947431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,7 +202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: e860239eb7102914d8556b248e37e68c, type: 3}
       propertyPath: m_Name
-      value: FantasyArcher_03
+      value: Body
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e860239eb7102914d8556b248e37e68c, type: 3}
       propertyPath: m_IsActive
