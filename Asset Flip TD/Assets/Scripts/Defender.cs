@@ -19,7 +19,7 @@ public class Defender : MonoBehaviour
 
     public int GetManaCost() { return manaCost; }
 
-    //Mana Angel Only!
+    //Mana Angel's Animation Effect!
     public void ProduceMana()
     {
         Instantiate(manaVFX, transform.position, Quaternion.identity);

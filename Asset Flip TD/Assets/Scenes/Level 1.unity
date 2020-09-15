@@ -581,7 +581,7 @@ PrefabInstance:
     - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: attackerPrefab
       value: 
-      objectReference: {fileID: 4145814420570661581, guid: 7831d3b99101efe48a2f74bb9c698454, type: 3}
+      objectReference: {fileID: 4397217672792264099, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (4)
@@ -642,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: attackerPrefab
       value: 
-      objectReference: {fileID: 8573305985069804710, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
+      objectReference: {fileID: 952404415816927648, guid: 998d892f3f9717d40b8f774724fb5d8a, type: 3}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (5)
@@ -713,7 +713,7 @@ PrefabInstance:
     - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: attackerPrefab
       value: 
-      objectReference: {fileID: 9037415688774080410, guid: 998d892f3f9717d40b8f774724fb5d8a, type: 3}
+      objectReference: {fileID: 4397217672792264099, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (3)
@@ -1040,7 +1040,7 @@ PrefabInstance:
     - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: attackerPrefab
       value: 
-      objectReference: {fileID: 8573305985069804710, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
+      objectReference: {fileID: 4397217672792264099, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (2)
@@ -1101,7 +1101,7 @@ PrefabInstance:
     - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: attackerPrefab
       value: 
-      objectReference: {fileID: 8573305985069804710, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
+      objectReference: {fileID: 952404415816927648, guid: 998d892f3f9717d40b8f774724fb5d8a, type: 3}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
