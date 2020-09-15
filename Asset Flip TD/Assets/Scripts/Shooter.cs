@@ -8,7 +8,13 @@ public class Shooter : MonoBehaviour
     [SerializeField] Transform projectileOriginPoint;
 
     AttackerSpawner myLaneSpawner;
-    
+    Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Start()
     {
         SetLaneSpawner();
@@ -18,13 +24,11 @@ public class Shooter : MonoBehaviour
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("Shoot Pew Pew!");
-            //TODO change animation state to Shooting
+            animator.SetBool("IsAttacking", true);
         }
         else
         {
-            Debug.Log("Sit And Wait!");
-            //TODO change amimation state to Idle
+            animator.SetBool("IsAttacking", false);
         }
     }
 
