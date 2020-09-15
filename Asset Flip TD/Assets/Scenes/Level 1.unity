@@ -714,6 +714,14 @@ PrefabInstance:
       propertyPath: attackerPrefab
       value: 
       objectReference: {fileID: 4397217672792264099, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
+    - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
+      propertyPath: minSpawnDelay
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 212183925592387463, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5593810108925626995, guid: 1c31616aa579b7b40bf9dbf3ec58b27e, type: 3}
       propertyPath: m_Name
       value: Spawner (3)
