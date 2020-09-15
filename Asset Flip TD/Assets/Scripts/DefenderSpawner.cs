@@ -6,15 +6,32 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     Defender defender;
+    ManaDisplay manaDisplay;
+
+    private void Awake()
+    {
+        manaDisplay = FindObjectOfType<ManaDisplay>();
+    }
 
     private void OnMouseDown()
     {
-        SpawnDefender(GetSquareClicked());
+        AttemptToPlaceDefenderAt(GetSquareClicked());
     }
 
     public void SetSelectedDefender(Defender defenderToSelect)
     {
         defender = defenderToSelect;
+    }
+
+    private void AttemptToPlaceDefenderAt(Vector2 gridPos)
+    {
+        int defenderCost = defender.GetManaCost();
+        if (manaDisplay.HaveEnoughMana(defenderCost))
+        {
+            SpawnDefender(gridPos);
+            manaDisplay.SpendMana(defenderCost);
+        }
+            
     }
 
     private Vector2 GetSquareClicked()

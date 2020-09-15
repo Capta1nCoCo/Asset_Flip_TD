@@ -65,6 +65,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manaCost: 100
+  manaProduce: 10
+  manaVFX: {fileID: 5220198454188762044, guid: ac6b2c33726d19949935863e79146d13, type: 3}
 --- !u!1 &6050860437466907080
 GameObject:
   m_ObjectHideFlags: 0

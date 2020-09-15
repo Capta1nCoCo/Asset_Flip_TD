@@ -12,7 +12,7 @@ public class DefenderButton : MonoBehaviour
     SpriteRenderer spriteRenderer;
     DefenderSpawner defenderSpawner;
     
-    private void Start()
+    private void Awake()
     {
         defenderButtons = FindObjectsOfType<DefenderButton>();
         spriteRenderer = GetComponent<SpriteRenderer>();

@@ -8,15 +8,24 @@ public class ManaDisplay : MonoBehaviour
     [SerializeField] int mana = 100;
     TextMeshProUGUI manaText;
 
-    void Start()
+    private void Awake()
     {
         manaText = GetComponent<TextMeshProUGUI>();
+    }
+
+    void Start()
+    {        
         UpdateDisplay();
     }
 
     private void UpdateDisplay()
     {
         manaText.text = mana.ToString();
+    }
+
+    public bool HaveEnoughMana(int amount)
+    {
+        return mana >= amount;
     }
 
     public void AddMana(int amount)
