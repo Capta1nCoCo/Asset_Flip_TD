@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4145814420570661619}
   - component: {fileID: 4145814420570661618}
   m_Layer: 0
-  m_Name: Skeleton
+  m_Name: Skeleton Warrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53a5437124f1cb4fb2bdf97204b05ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 200
+  healthPoints: 300
 --- !u!61 &4145814420570661619
 BoxCollider2D:
   m_ObjectHideFlags: 0

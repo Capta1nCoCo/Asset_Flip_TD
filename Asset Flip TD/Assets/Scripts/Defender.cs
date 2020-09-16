@@ -6,7 +6,7 @@ public class Defender : MonoBehaviour
 {
     [SerializeField] int manaCost = 100;
     
-    [Header("Mana Angel Properties")]
+    [Header("Mana Angel Only!")]
     [Tooltip("Per Second")] [SerializeField] int manaProduction = 10;
     [SerializeField] ParticleSystem manaVFX;    
 
