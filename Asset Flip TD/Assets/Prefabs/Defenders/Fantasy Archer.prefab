@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 9193847410633607382}
   - component: {fileID: 5500009217866483901}
   - component: {fileID: 1409851842998033401}
+  - component: {fileID: -6141551517527674723}
   - component: {fileID: 3808059727177527172}
   m_Layer: 0
   m_Name: Fantasy Archer
@@ -196,6 +197,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1065750534976220335, guid: fa21c490a958c064ba9ab06c513a4e0c, type: 3}
   projectileOriginPoint: {fileID: 330762334334185928}
+--- !u!114 &-6141551517527674723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060215445605470511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53a5437124f1cb4fb2bdf97204b05ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
 --- !u!61 &3808059727177527172
 BoxCollider2D:
   m_ObjectHideFlags: 0

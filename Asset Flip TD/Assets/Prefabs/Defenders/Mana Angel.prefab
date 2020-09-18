@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6050860436961419453}
   - component: {fileID: 2680199590564074397}
   - component: {fileID: 1602267908567905594}
+  - component: {fileID: -1650776503222674011}
   - component: {fileID: 895074983919347360}
   m_Layer: 0
   m_Name: Mana Angel
@@ -68,6 +69,19 @@ MonoBehaviour:
   manaCost: 100
   manaProduction: 10
   manaVFX: {fileID: 5220198454188762044, guid: ac6b2c33726d19949935863e79146d13, type: 3}
+--- !u!114 &-1650776503222674011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050860436961419452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53a5437124f1cb4fb2bdf97204b05ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 50
 --- !u!61 &895074983919347360
 BoxCollider2D:
   m_ObjectHideFlags: 0

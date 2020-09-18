@@ -259,63 +259,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &436970934
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8573305985069804710, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_Name
-      value: Wicked Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8783538403965645218, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
 --- !u!1 &487468968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1302,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1976846524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 933154260326342835, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
+  m_PrefabInstance: {fileID: 1983255979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1976846529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976846524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2a4ffb81e5d7442b09a07da99caa32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1001 &1983255979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,6 +1327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 933154260198048652, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 933154260326342832, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
       propertyPath: m_Offset.y
       value: 0.013592005
@@ -1382,17 +1347,21 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1.0031724
       objectReference: {fileID: 0}
+    - target: {fileID: 933154260326342832, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 933154260326342835, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
       propertyPath: m_Name
       value: Monk Protector
       objectReference: {fileID: 0}
     - target: {fileID: 933154260326342847, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 933154260326342847, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 933154260326342847, guid: 672ef526810c58543b3cd2d015c021e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1580,6 +1549,10 @@ PrefabInstance:
     - target: {fileID: 1316765093894923313, guid: b09590574c62a304eb13a98127f26b0c, type: 3}
       propertyPath: m_Name
       value: Music Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316765093894923313, guid: b09590574c62a304eb13a98127f26b0c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1316765093894923319, guid: b09590574c62a304eb13a98127f26b0c, type: 3}
       propertyPath: m_LocalPosition.x

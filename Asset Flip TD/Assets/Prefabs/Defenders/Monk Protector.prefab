@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 933154260326342846}
   - component: {fileID: 933154260326342833}
   - component: {fileID: 933154260326342832}
+  - component: {fileID: -4021844784266830051}
   m_Layer: 0
   m_Name: Monk Protector
   m_TagString: Untagged
@@ -176,3 +177,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9878049, y: 0.98869467}
   m_EdgeRadius: 0
+--- !u!114 &-4021844784266830051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933154260326342835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53a5437124f1cb4fb2bdf97204b05ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 200
