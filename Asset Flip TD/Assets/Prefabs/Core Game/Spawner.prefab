@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5593810108925626995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 5.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,3 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca8aa8cfa0af0043948bb316a551028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackerPrefabs:
+  - {fileID: 4397217672792264099, guid: 3628518786bd36945bd2e099c3927a66, type: 3}
+  - {fileID: 4145814420570661617, guid: 7831d3b99101efe48a2f74bb9c698454, type: 3}
+  - {fileID: 7921754415578688350, guid: fae9cc973d3084a4fb57d734f9ae6462, type: 3}
+  - {fileID: 952404415816927648, guid: 998d892f3f9717d40b8f774724fb5d8a, type: 3}
+  minSpawnDelay: 1
+  maxSpawnDelay: 5
