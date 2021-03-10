@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 462861637}
   - component: {fileID: 462861636}
   m_Layer: 0
-  m_Name: Base Collider
+  m_Name: Lives Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,6 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livesText: {fileID: 2057851520}
+  lives: 10
+  damage: 1
 --- !u!61 &462861637
 BoxCollider2D:
   m_ObjectHideFlags: 0

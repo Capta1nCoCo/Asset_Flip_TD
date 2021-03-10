@@ -6,7 +6,8 @@ using TMPro;
 public class LivesDisplay : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI livesText;
-    int lives = 10;
+    [SerializeField] int lives = 10;
+    [SerializeField] int damage = 1;
     SceneLoader sceneLoader;
 
     void Start()
@@ -17,12 +18,18 @@ public class LivesDisplay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        lives--;
-        UpdateScore();
+        TakeLife();
+        Destroy(collision.gameObject);
         if (lives <= 0)
         {
             sceneLoader.LoadLoseScreen();
         }
+    }
+
+    private void TakeLife()
+    {
+        lives -= damage;
+        UpdateScore();
     }
 
     private void UpdateScore()
