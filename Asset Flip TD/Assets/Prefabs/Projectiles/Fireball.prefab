@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   damagePoints: 50
+  isExplosive: 1
+  explosionVFX: {fileID: 5971413148527558449, guid: 09716cbafa6b7b543b3ebd8d227e1fb0, type: 3}
 --- !u!95 &7596457012665887185
 Animator:
   serializedVersion: 3

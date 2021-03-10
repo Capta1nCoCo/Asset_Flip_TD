@@ -28,4 +28,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
+
+    public void LoadLoseScreen()
+    {
+        SceneManager.LoadScene(2);
+    }
+
 }
