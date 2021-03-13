@@ -27,11 +27,11 @@ public class SceneLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
-    }
+    }   
 
     public void LoadLoseScreen()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Lose Screen");
     }
 
 }

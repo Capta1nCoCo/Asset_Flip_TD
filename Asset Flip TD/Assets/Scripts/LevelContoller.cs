@@ -6,8 +6,16 @@ using UnityEngine.UI;
 
 public class LevelContoller : MonoBehaviour
 {
+    [SerializeField] GameObject winLabel;
+    [SerializeField] float delayInSeconds = 3f;
     int numberOfAttackers = 0;
-    bool roundTimerActive = true;      
+    bool roundTimerActive = true;
+    
+
+    private void Start()
+    {
+        winLabel.SetActive(false);
+    }
 
     public void AttackerSpawned()
     {
@@ -20,6 +28,7 @@ public class LevelContoller : MonoBehaviour
         if (!roundTimerActive && numberOfAttackers <= 0)
         {
             Debug.Log("End Level Now!");
+            StartCoroutine(HandleWinCondition());
         }
     }
 
@@ -34,7 +43,15 @@ public class LevelContoller : MonoBehaviour
         AttackerSpawner[] spawnerArray = FindObjectsOfType<AttackerSpawner>();
         foreach (AttackerSpawner spawner in spawnerArray)
         {
-            spawner.StopSpawning();
+            spawner.StopSpawning();            
         }
+    }
+
+    IEnumerator HandleWinCondition()
+    {        
+        winLabel.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(delayInSeconds);
+        FindObjectOfType<SceneLoader>().LoadNextScene();
     }
 }
