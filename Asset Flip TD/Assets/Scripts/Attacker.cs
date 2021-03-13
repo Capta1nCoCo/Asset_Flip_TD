@@ -8,10 +8,13 @@ public class Attacker : MonoBehaviour
     [Range (0f, 5f)] [SerializeField] float currentSpeed = 1f;
     GameObject currentTarget;
     Animator animator;
+    LevelContoller levelContoller;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        levelContoller = FindObjectOfType<LevelContoller>();
+        levelContoller.AttackerSpawned();
     }
 
     void Update()
@@ -48,5 +51,9 @@ public class Attacker : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        levelContoller.AttackerKilled();
+    }
 
 }
