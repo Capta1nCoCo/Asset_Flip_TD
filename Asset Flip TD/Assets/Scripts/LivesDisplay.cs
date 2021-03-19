@@ -8,11 +8,10 @@ public class LivesDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] int lives = 10;
     [SerializeField] int damage = 1;
-    SceneLoader sceneLoader;
+    
 
     void Start()
-    {
-        sceneLoader = FindObjectOfType<SceneLoader>();
+    {        
         UpdateScore();
     }
 
@@ -22,7 +21,7 @@ public class LivesDisplay : MonoBehaviour
         Destroy(collision.gameObject);
         if (lives <= 0)
         {
-            sceneLoader.LoadLoseScreen();
+            FindObjectOfType<LevelContoller>().HandleLoseCondition();
         }
     }
 

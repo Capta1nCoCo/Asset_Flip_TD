@@ -29,9 +29,14 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }   
 
-    public void LoadLoseScreen()
+    public void ReloadScene()
     {
-        SceneManager.LoadScene("Lose Screen");
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Start Screen");
     }
 
 }
