@@ -32,6 +32,7 @@ public class SceneLoader : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(currentSceneIndex);
+        Time.timeScale = 1;
     }
 
     public void LoadMainMenu()

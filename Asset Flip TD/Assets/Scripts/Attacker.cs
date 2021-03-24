@@ -53,7 +53,10 @@ public class Attacker : MonoBehaviour
 
     private void OnDestroy()
     {
-        levelContoller.AttackerKilled();
+        if (levelContoller != null)
+        {
+            levelContoller.AttackerKilled();
+        }        
     }
 
 }
